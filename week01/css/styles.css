@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #333; /* Cor do texto do corpo */
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+a {
+    color: #333; /* Cor normal e visitada dos links */
+    text-decoration: none;
+}
+
+
+header {
+    margin: 0;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+header a:hover, header a:active {
+    text-decoration: none; /* Remover sublinhado no hover e active */
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #d0d0d0; /* Linha cinza fina acima */
+    border-bottom: 1px solid #d0d0d0; /* Linha cinza fina abaixo */
+    padding: 10px 20px; /* Adiciona espaço interno */
+}
+
+header li a {
+    color: #808080; /* Cor do texto cinza dos links no cabeçalho */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+
+header li:last-child {
+    margin-right: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+article {
+    background: #FFFFFF;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 250px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.post-date {
+    color: #333; /* Cor do texto das datas dos posts */
+}
+
+.post-content h2 a, .post-content h2 a:visited {
+    color: #808080; /* Cor do texto dos links nos posts */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-content h2 a:hover {
+    color: #6495ED; /* Cor do hover dos links nos posts */
+    text-decoration: underline;
+}
+
+/* CSS para centralizar o conteúdo quando a tela diminuir de tamanho */
+@media (max-width: 1024px) {
+  header {
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 2rem 0; /* Reduz o preenchimento superior e inferior */
+  }
+
+  main {
+    padding: 2rem 0; /* Reduz o preenchimento superior e inferior */
+  }
+}
+
+@media screen and (max-width: 768px) {
+    header ul {
+        align-items: center;
+    }
+
+    header li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
